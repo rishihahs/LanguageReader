@@ -4304,7 +4304,7 @@ form.custom .custom.disabled {
 /* line 67, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
 .contain-to-grid {
   width: 100%;
-  background: #111111;
+  background: #616161;
 }
 /* line 71, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
 .contain-to-grid .top-bar {
@@ -4326,7 +4326,7 @@ form.custom .custom.disabled {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #111111;
+  background: #616161;
   margin-bottom: 1.875em;
 }
 /* line 92, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
@@ -4429,7 +4429,7 @@ form.custom .custom.disabled {
 }
 /* line 189, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .title-area {
-  background: #111111;
+  background: #616161;
 }
 /* line 192, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .toggle-topbar a {
@@ -4462,8 +4462,8 @@ form.custom .custom.disabled {
 /* line 227, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
-  border-bottom: solid 1px #2b2b2b;
-  border-top: solid 1px black;
+  border-bottom: solid 1px #7b7b7b;
+  border-top: solid 1px #484848;
   clear: both;
   height: 1px;
   width: 100%;
@@ -4481,7 +4481,7 @@ form.custom .custom.disabled {
 }
 /* line 246, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.hover {
-  background: #090909;
+  background: #595959;
   color: white;
 }
 /* line 252, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
@@ -4519,7 +4519,7 @@ form.custom .custom.disabled {
 }
 /* line 281, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a {
-  background: #090909;
+  background: #595959;
   color: white;
 }
 /* line 288, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
@@ -4605,7 +4605,7 @@ form.custom .custom.disabled {
 @media only screen and (min-width: 58.75em) {
   /* line 359, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
   .top-bar {
-    background: #111111;
+    background: #616161;
     *zoom: 1;
     overflow: visible;
   }
@@ -4642,7 +4642,7 @@ form.custom .custom.disabled {
   }
   /* line 379, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
   .top-bar.expanded {
-    background: #111111;
+    background: #616161;
   }
 
   /* line 382, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
@@ -4676,7 +4676,7 @@ form.custom .custom.disabled {
   .top-bar-section li a:not(.button) {
     padding: 0 15px;
     line-height: 45px;
-    background: #111111;
+    background: #616161;
   }
   /* line 407, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
   .top-bar-section li a:not(.button).hover {
@@ -4730,12 +4730,12 @@ form.custom .custom.disabled {
     line-height: 1;
     white-space: nowrap;
     padding: 7px 15px;
-    background: #1e1e1e;
+    background: #6e6e6e;
   }
   /* line 460, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li label {
     white-space: nowrap;
-    background: #1e1e1e;
+    background: #6e6e6e;
   }
   /* line 466, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li .dropdown {
@@ -4746,15 +4746,15 @@ form.custom .custom.disabled {
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
-    border-right: solid 1px #2b2b2b;
-    border-left: solid 1px black;
+    border-right: solid 1px #7b7b7b;
+    border-left: solid 1px #484848;
     clear: none;
     height: 45px;
     width: 0px;
   }
   /* line 484, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-form {
-    background: #111111;
+    background: #616161;
     padding: 0 15px;
     height: 45px;
   }
@@ -6659,420 +6659,4 @@ a.th {
 /* line 148, ../../../../../.rvm/gems/ruby-1.9.3-p429/gems/zurb-foundation-4.2.2/scss/foundation/components/_dropdown.scss */
 .f-dropdown.large {
   max-width: 800px;
-}
-
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
-/* line 9, ../scss/_styles.scss */
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-
-/* line 13, ../scss/_styles.scss */
-body {
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/* line 18, ../scss/_styles.scss */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/* line 23, ../scss/_styles.scss */
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/* line 28, ../scss/_styles.scss */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/* line 37, ../scss/_styles.scss */
-img {
-  vertical-align: middle;
-}
-
-/* line 41, ../scss/_styles.scss */
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 47, ../scss/_styles.scss */
-textarea {
-  resize: vertical;
-}
-
-/* line 51, ../scss/_styles.scss */
-.chromeframe {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-/* line 63, ../scss/_styles.scss */
-body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
-/* line 67, ../scss/_styles.scss */
-.wrapper {
-  width: 90%;
-  margin: 0 5%;
-}
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-/* line 76, ../scss/_styles.scss */
-.header-container {
-  border-bottom: 20px solid #e44d26;
-}
-
-/* line 81, ../scss/_styles.scss */
-.footer-container,
-.main aside {
-  border-top: 20px solid #e44d26;
-}
-
-/* line 87, ../scss/_styles.scss */
-.header-container,
-.footer-container,
-.main aside {
-  background: #f16529;
-}
-
-/* line 91, ../scss/_styles.scss */
-.title {
-  color: white;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-/* line 99, ../scss/_styles.scss */
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 104, ../scss/_styles.scss */
-nav a {
-  display: block;
-  margin-bottom: 10px;
-  padding: 15px 0;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  background: #e44d26;
-}
-
-/* line 118, ../scss/_styles.scss */
-nav a:hover,
-nav a:visited {
-  color: white;
-}
-
-/* line 122, ../scss/_styles.scss */
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-/* line 130, ../scss/_styles.scss */
-.main {
-  padding: 30px 0;
-}
-
-/* line 134, ../scss/_styles.scss */
-.main article h1 {
-  font-size: 2em;
-}
-
-/* line 138, ../scss/_styles.scss */
-.main aside {
-  color: white;
-  padding: 0px 5% 10px;
-}
-
-/* line 143, ../scss/_styles.scss */
-.footer-container footer {
-  color: white;
-  padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-/* line 152, ../scss/_styles.scss */
-.ie7 .title {
-  padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-@media only screen and (min-width: 480px) {
-  /* ====================
-      INTERMEDIATE: Menu
-     ==================== */
-  /* line 184, ../scss/_styles.scss */
-  nav a {
-    float: left;
-    width: 27%;
-    margin: 0 1.7%;
-    padding: 25px 2%;
-    margin-bottom: 0;
-  }
-
-  /* line 192, ../scss/_styles.scss */
-  nav li:first-child a {
-    margin-left: 0;
-  }
-
-  /* line 196, ../scss/_styles.scss */
-  nav li:last-child a {
-    margin-right: 0;
-  }
-
-  /* ========================
-      INTERMEDIATE: IE Fixes
-     ======================== */
-  /* line 204, ../scss/_styles.scss */
-  nav ul li {
-    display: inline;
-  }
-
-  /* line 208, ../scss/_styles.scss */
-  .oldie nav a {
-    margin: 0 0.7%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* ====================
-      WIDE: CSS3 Effects
-     ==================== */
-  /* line 220, ../scss/_styles.scss */
-  .header-container,
-  .main aside {
-    -webkit-box-shadow: 0 5px 10px #aaa;
-    -moz-box-shadow: 0 5px 10px #aaa;
-    box-shadow: 0 5px 10px #aaa;
-  }
-
-  /* ============
-      WIDE: Menu
-     ============ */
-  /* line 230, ../scss/_styles.scss */
-  .title {
-    float: left;
-  }
-
-  /* line 234, ../scss/_styles.scss */
-  nav {
-    float: right;
-    width: 38%;
-  }
-
-  /* ============
-      WIDE: Main
-     ============ */
-  /* line 243, ../scss/_styles.scss */
-  .main article {
-    float: left;
-    width: 57%;
-  }
-
-  /* line 248, ../scss/_styles.scss */
-  .main aside {
-    float: right;
-    width: 28%;
-  }
-}
-@media only screen and (min-width: 1140px) {
-  /* ===============
-      Maximal Width
-     =============== */
-  /* line 260, ../scss/_styles.scss */
-  .wrapper {
-    width: 1026px;
-    /* 1140px - 10% for margins */
-    margin: 0 auto;
-  }
-}
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-/* line 270, ../scss/_styles.scss */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  *text-indent: -9999px;
-}
-
-/* line 277, ../scss/_styles.scss */
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%;
-}
-
-/* line 284, ../scss/_styles.scss */
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-/* line 289, ../scss/_styles.scss */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-/* line 301, ../scss/_styles.scss */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-/* line 310, ../scss/_styles.scss */
-.invisible {
-  visibility: hidden;
-}
-
-/* line 315, ../scss/_styles.scss */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-/* line 320, ../scss/_styles.scss */
-.clearfix:after {
-  clear: both;
-}
-
-/* line 324, ../scss/_styles.scss */
-.clearfix {
-  *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-@media print {
-  /* line 333, ../scss/_styles.scss */
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  /* line 341, ../scss/_styles.scss */
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  /* line 345, ../scss/_styles.scss */
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  /* line 349, ../scss/_styles.scss */
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links for images, or javascript/internal links
-   */
-  /* line 359, ../scss/_styles.scss */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-
-  /* line 364, ../scss/_styles.scss */
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /* line 369, ../scss/_styles.scss */
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */
-  }
-
-  /* line 374, ../scss/_styles.scss */
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  /* line 378, ../scss/_styles.scss */
-  img {
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
-}
-
-  /* line 388, ../scss/_styles.scss */
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  /* line 394, ../scss/_styles.scss */
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
 }
