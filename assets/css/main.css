@@ -6660,3 +6660,18 @@ a.th {
 .f-dropdown.large {
   max-width: 800px;
 }
+
+/* line 3, ../scss/_styles.scss */
+i {
+  font-style: normal;
+}
+
+/* line 7, ../scss/_styles.scss */
+#content {
+  text-indent: 3%;
+}
+
+/* line 12, ../scss/_styles.scss */
+.word:hover {
+  background-color: #fffee0;
+}

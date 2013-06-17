@@ -1,0 +1,15 @@
+$word_color: #fffee0;
+
+i {
+  font-style: normal;
+}
+
+#content {
+  text-indent: 3%;
+}
+
+.word {
+  &:hover {
+    background-color: $word_color;
+  };
+}
