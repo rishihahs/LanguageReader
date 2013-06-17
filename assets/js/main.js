@@ -6,7 +6,15 @@
   
   // Add a click handler to every word
   $('.word').click(function() {
+    var word = $(this).text();
+    if (word === '' || word === ' ' || word === '\n') {
+      return;
+    }
+    
     // Spanish API
+    $.getJSON(window.WordReference.createURL(word), function(data) {
+      console.log(data);
+    });
   });
   
   // iterate over every text node
