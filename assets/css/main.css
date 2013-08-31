@@ -6673,5 +6673,279 @@ i {
 
 /* line 12, ../scss/_styles.scss */
 .word:hover {
-  background-color: #fffee0;
+  background-color: #fffec2;
+}
+
+/* line 3, ../scss/_popup.scss */
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1010;
+  display: none;
+  padding: 1px;
+  text-align: left;
+  background-color: #ffffff;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  white-space: normal;
+}
+
+/* line 25, ../scss/_popup.scss */
+.popover.top {
+  margin-top: -10px;
+}
+
+/* line 28, ../scss/_popup.scss */
+.popover.right {
+  margin-left: 10px;
+}
+
+/* line 31, ../scss/_popup.scss */
+.popover.bottom {
+  margin-top: 10px;
+}
+
+/* line 34, ../scss/_popup.scss */
+.popover.left {
+  margin-left: -10px;
+}
+
+/* line 37, ../scss/_popup.scss */
+.popover-title {
+  margin: 0;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+/* line 49, ../scss/_popup.scss */
+.popover-title:empty {
+  display: none;
+}
+
+/* line 52, ../scss/_popup.scss */
+.popover-content {
+  padding: 9px 14px;
+}
+
+/* line 56, ../scss/_popup.scss */
+.popover .arrow,
+.popover .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* line 64, ../scss/_popup.scss */
+.popover .arrow {
+  border-width: 11px;
+}
+
+/* line 67, ../scss/_popup.scss */
+.popover .arrow:after {
+  border-width: 10px;
+  content: "";
+}
+
+/* line 71, ../scss/_popup.scss */
+.popover.top .arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-bottom-width: 0;
+  border-top-color: #999;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  bottom: -11px;
+}
+
+/* line 79, ../scss/_popup.scss */
+.popover.top .arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  border-bottom-width: 0;
+  border-top-color: #ffffff;
+}
+
+/* line 85, ../scss/_popup.scss */
+.popover.right .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-left-width: 0;
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 93, ../scss/_popup.scss */
+.popover.right .arrow:after {
+  left: 1px;
+  bottom: -10px;
+  border-left-width: 0;
+  border-right-color: #ffffff;
+}
+
+/* line 99, ../scss/_popup.scss */
+.popover.bottom .arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  top: -11px;
+}
+
+/* line 107, ../scss/_popup.scss */
+.popover.bottom .arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  border-top-width: 0;
+  border-bottom-color: #ffffff;
+}
+
+/* line 113, ../scss/_popup.scss */
+.popover.left .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 121, ../scss/_popup.scss */
+.popover.left .arrow:after {
+  right: 1px;
+  border-right-width: 0;
+  border-left-color: #ffffff;
+  bottom: -10px;
+}
+
+/* line 127, ../scss/_popup.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 131, ../scss/_popup.scss */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+/* line 136, ../scss/_popup.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 139, ../scss/_popup.scss */
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 146, ../scss/_popup.scss */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, ../scss/_close.scss */
+.close-popover {
+  margin-top: -26px;
+  margin-right: -10px;
+  margin-left: 26px;
+}
+
+/* line 7, ../scss/_close.scss */
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+/* line 18, ../scss/_close.scss */
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+/* line 25, ../scss/_close.scss */
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+/* line 32, ../scss/_close.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 36, ../scss/_close.scss */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+/* line 41, ../scss/_close.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 44, ../scss/_close.scss */
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 51, ../scss/_close.scss */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
