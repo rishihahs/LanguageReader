@@ -16,10 +16,10 @@
 
         popover = $(this);
 
+        var self = this;
         if (!$(this).attr('data-original-title')) {
             $(this).popover(options);
 
-            var self = this;
             $(this).on('shown.bs.popover', function() {
                 $('.close-popover:not(.bound)').addClass('bound').on('click', function() {
                     $(self).popover('hide');
@@ -44,6 +44,7 @@
             }
 
             $('.popover-content').html(response);
+            $(self).popover('rearrange');
         });
     });
 

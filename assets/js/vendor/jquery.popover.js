@@ -132,6 +132,10 @@
     }, self.options.delay.hide)
   }
 
+  Tooltip.prototype.rearrange = function () {
+    this.show(true);
+  }
+
   Tooltip.prototype.show = function () {
     var e = $.Event('show.bs.'+ this.type)
 
@@ -142,7 +146,9 @@
 
       var $tip = this.tip()
 
-      this.setContent()
+      if (typeof arguments[0] === 'undefined' || arguments[0] !== true) {
+        this.setContent();
+      }
 
       if (this.options.animation) $tip.addClass('fade')
 
