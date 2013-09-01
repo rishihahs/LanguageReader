@@ -7232,6 +7232,11 @@ i {
   background-color: #fffec2;
 }
 
+/* line 17, ../scss/_styles.scss */
+.active {
+  background-color: #fffec2;
+}
+
 /* line 3, ../scss/_popup.scss */
 .popover {
   position: absolute;

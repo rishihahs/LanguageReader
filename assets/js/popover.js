@@ -11,23 +11,26 @@
 
     $('.word').click(function() {
         if (popover) {
+            popover.removeClass('active');
             popover.popover('destroy');
         }
 
         popover = $(this);
+        popover.addClass('active');
 
         var self = this;
-        $(this).popover(options);
+        popover.popover(options);
 
-        $(this).on('shown.bs.popover', function() {
+        popover.on('shown.bs.popover', function() {
             $('.close-popover:not(.bound)').addClass('bound').on('click', function() {
                 $(self).popover('destroy');
+                popover.removeClass('active');
             });
         });
 
-        $(this).popover('show');
+        popover.popover('show');
 
-        window.WordReference.getJSON($.trim($(this).text().replace('.', '')), function(content) {console.log(JSON.stringify(content));
+        window.WordReference.getJSON($.trim(popover.text().replace('.', '')), function(content) {console.log(JSON.stringify(content));
             var response;
             if (content.hasOwnProperty('Error')) {
                 response = 'No translation found.';
