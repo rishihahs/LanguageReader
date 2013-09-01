@@ -11,36 +11,28 @@
 
     $('.word').click(function() {
         if (popover) {
-            popover.popover('hide');
+            popover.popover('destroy');
         }
 
         popover = $(this);
 
         var self = this;
-        if (!$(this).attr('data-original-title')) {
-            $(this).popover(options);
+        $(this).popover(options);
 
-            $(this).on('shown.bs.popover', function() {
-                $('.close-popover:not(.bound)').addClass('bound').on('click', function() {
-                    $(self).popover('hide');
-                });
+        $(this).on('shown.bs.popover', function() {
+            $('.close-popover:not(.bound)').addClass('bound').on('click', function() {
+                $(self).popover('destroy');
             });
-        }
+        });
 
-        var $el = $(this).next('.popover');
-
-        if (!$el.is(':visible')) {
-            $(this).popover('show');
-        } else {
-            $(this).popover('hide');
-        }
+        $(this).popover('show');
 
         window.WordReference.getJSON($.trim($(this).text().replace('.', '')), function(content) {console.log(JSON.stringify(content));
             var response;
             if (content.hasOwnProperty('Error')) {
                 response = 'No translation found.';
             } else {
-                response = content.term0.PrincipalTranslations[0].FirstTranslation;
+                response = content.term0.PrincipalTranslations[0].FirstTranslation.term;
             }
 
             $('.popover-content').html(response);
