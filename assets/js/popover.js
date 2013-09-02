@@ -30,17 +30,29 @@
 
         popover.popover('show');
 
-        window.WordReference.getJSON($.trim(popover.text().replace(/[.?,]/, '')), function(content) {console.log(JSON.stringify(content));
+        var text = $.trim(popover.text().replace(/[.?,]/, ''));
+        wordReference(text, popover);
+    });
+
+    function wordReference(text, popover) {
+        window.WordReference.getJSON(text, function(content) {
             var response;
             if (content.hasOwnProperty('Error')) {
                 response = 'No translation found.';
             } else {
+                // Check if conjugated
+                var newOriginal = content.term0.PrincipalTranslations[0].OriginalTerm.term;
+                if (newOriginal !== text) {
+                    wordReference(newOriginal, popover);
+                    return;
+                }
+                console.log(window.WordReference.semantisizeJSON(content));
                 response = content.term0.PrincipalTranslations[0].FirstTranslation.term;
             }
 
             $('.popover-content').html(response);
-            $(self).popover('rearrange');
+            popover.popover('rearrange');
         });
-    });
+    }
 
 })(this);
