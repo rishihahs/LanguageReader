@@ -6,7 +6,7 @@
         html: true,
         title: '<span>mundo (mundo)</span>',
         content: 'Loading...',
-        template: '<div class="popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div><button type="button" class="close close-popover">&times;</button></div>'
+        template: '<div class="popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-canvas"><div class="popover-content"></div></div><button type="button" class="closepop closepop-popover">&times;</button></div>'
     };
 
     $('.word').click(function() {
@@ -22,7 +22,7 @@
         popover.popover(options);
 
         popover.on('shown.bs.popover', function() {
-            $('.close-popover:not(.bound)').addClass('bound').on('click', function() {
+            $('.closepop-popover:not(.bound)').addClass('bound').on('click', function() {
                 $(self).popover('destroy');
                 popover.removeClass('active');
             });
@@ -46,8 +46,9 @@
                     wordReference(newOriginal, popover);
                     return;
                 }
-                console.log(window.WordReference.semantisizeJSON(content));
-                response = content.term0.PrincipalTranslations[0].FirstTranslation.term;
+
+                var context = window.WordReference.semantisizeJSON(content);
+                response = window.Handlebars.templates.spanish(context);
             }
 
             $('.popover-content').html(response);

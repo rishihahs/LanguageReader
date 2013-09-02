@@ -7255,29 +7255,30 @@ i {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   white-space: normal;
+  min-width: 160px;
 }
 
-/* line 21, ../scss/_popup.scss */
+/* line 22, ../scss/_popup.scss */
 .popover.top {
   margin-top: -10px;
 }
 
-/* line 24, ../scss/_popup.scss */
+/* line 25, ../scss/_popup.scss */
 .popover.right {
   margin-left: 10px;
 }
 
-/* line 27, ../scss/_popup.scss */
+/* line 28, ../scss/_popup.scss */
 .popover.bottom {
   margin-top: 10px;
 }
 
-/* line 30, ../scss/_popup.scss */
+/* line 31, ../scss/_popup.scss */
 .popover.left {
   margin-left: -10px;
 }
 
-/* line 33, ../scss/_popup.scss */
+/* line 34, ../scss/_popup.scss */
 .popover-title {
   margin: 0;
   padding: 8px 14px;
@@ -7289,12 +7290,18 @@ i {
   border-radius: 5px 5px 0 0;
 }
 
-/* line 43, ../scss/_popup.scss */
+/* line 44, ../scss/_popup.scss */
+.popover-canvas {
+  max-height: 200px;
+  overflow: auto;
+}
+
+/* line 48, ../scss/_popup.scss */
 .popover-content {
   padding: 9px 14px;
 }
 
-/* line 47, ../scss/_popup.scss */
+/* line 52, ../scss/_popup.scss */
 .popover .arrow,
 .popover .arrow:after {
   position: absolute;
@@ -7305,18 +7312,18 @@ i {
   border-style: solid;
 }
 
-/* line 55, ../scss/_popup.scss */
+/* line 60, ../scss/_popup.scss */
 .popover .arrow {
   border-width: 11px;
 }
 
-/* line 58, ../scss/_popup.scss */
+/* line 63, ../scss/_popup.scss */
 .popover .arrow:after {
   border-width: 10px;
   content: "";
 }
 
-/* line 62, ../scss/_popup.scss */
+/* line 67, ../scss/_popup.scss */
 .popover.top .arrow {
   left: 50%;
   margin-left: -11px;
@@ -7326,7 +7333,7 @@ i {
   bottom: -11px;
 }
 
-/* line 70, ../scss/_popup.scss */
+/* line 75, ../scss/_popup.scss */
 .popover.top .arrow:after {
   content: " ";
   bottom: 1px;
@@ -7335,7 +7342,7 @@ i {
   border-top-color: #ffffff;
 }
 
-/* line 77, ../scss/_popup.scss */
+/* line 82, ../scss/_popup.scss */
 .popover.right .arrow {
   top: 50%;
   left: -11px;
@@ -7345,7 +7352,7 @@ i {
   border-right-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 85, ../scss/_popup.scss */
+/* line 90, ../scss/_popup.scss */
 .popover.right .arrow:after {
   content: " ";
   left: 1px;
@@ -7354,7 +7361,7 @@ i {
   border-right-color: #ffffff;
 }
 
-/* line 92, ../scss/_popup.scss */
+/* line 97, ../scss/_popup.scss */
 .popover.bottom .arrow {
   left: 50%;
   margin-left: -11px;
@@ -7364,7 +7371,7 @@ i {
   top: -11px;
 }
 
-/* line 100, ../scss/_popup.scss */
+/* line 105, ../scss/_popup.scss */
 .popover.bottom .arrow:after {
   content: " ";
   top: 1px;
@@ -7373,7 +7380,7 @@ i {
   border-bottom-color: #ffffff;
 }
 
-/* line 107, ../scss/_popup.scss */
+/* line 112, ../scss/_popup.scss */
 .popover.left .arrow {
   top: 50%;
   right: -11px;
@@ -7383,7 +7390,7 @@ i {
   border-left-color: rgba(0, 0, 0, 0.25);
 }
 
-/* line 115, ../scss/_popup.scss */
+/* line 120, ../scss/_popup.scss */
 .popover.left .arrow:after {
   content: " ";
   right: 1px;
@@ -7393,14 +7400,14 @@ i {
 }
 
 /* line 1, ../scss/_close.scss */
-.close-popover {
+.closepop-popover {
   position: absolute;
   top: 0;
   right: 6px;
 }
 
 /* line 7, ../scss/_close.scss */
-.close {
+.closepop {
   font-size: 20px;
   font-weight: bold;
   line-height: 20px;
@@ -7411,8 +7418,8 @@ i {
 }
 
 /* line 17, ../scss/_close.scss */
-.close:hover,
-.close:focus {
+.closepop:hover,
+.closepop:focus {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
@@ -7421,7 +7428,7 @@ i {
 }
 
 /* line 24, ../scss/_close.scss */
-button.close {
+button.closepop {
   padding: 0;
   cursor: pointer;
   background: transparent;
@@ -7464,4 +7471,25 @@ button.close {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/* line 3, ../scss/_definitions.scss */
+.definitions {
+  text-indent: 0;
+}
+/* line 6, ../scss/_definitions.scss */
+.definitions .POS {
+  margin-left: 3px;
+  font-style: italic;
+  font-size: 0.7em;
+}
+/* line 12, ../scss/_definitions.scss */
+.definitions hr {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+/* line 17, ../scss/_definitions.scss */
+.definitions .sense {
+  font-size: 0.9em;
+  margin-left: 10px;
 }

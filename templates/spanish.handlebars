@@ -1,12 +1,16 @@
+<div class="definitions">
 {{#with term0}}
 {{#each translations}}
 <div class="definition">
   <div class="translation">
     {{#each terms}}
-    <span class="term">{{term}}</span><span class="POS">{{POS}}</span>
+    <div class="termgroup">
+        <span class="term">{{term}}</span><span class="POS">{{POS}}</span>
+    </div>
     {{/each}}
   </div>
-  <div class="sense">{{sense}}</div>
+  <div class="sense">{{sense}}</div> <hr>
 </div>
 {{/each}}
 {{/with}}
+</div>
