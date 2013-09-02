@@ -1,0 +1,12 @@
+{{#with term0}}
+{{#each translations}}
+<div class="definition">
+  <div class="translation">
+    {{#each terms}}
+    <span class="term">{{term}}</span><span class="POS">{{POS}}</span>
+    {{/each}}
+  </div>
+  <div class="sense">{{sense}}</div>
+</div>
+{{/each}}
+{{/with}}
