@@ -4,12 +4,14 @@
     var options = {
         placement: 'auto',
         html: true,
-        title: '<span>mundo (mundo)</span>',
+        title: '<span></span><i class="foundicon-speaker"></i>',
         content: 'Loading...',
         template: '<div class="popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-canvas"><div class="popover-content"></div></div><button type="button" class="closepop closepop-popover">&times;</button></div>'
     };
 
-    $('.word').click(function() {
+    $('.word').click(function(e) {
+        e.stopPropagation();
+
         if (popover) {
             popover.removeClass('active');
             popover.popover('destroy');
@@ -26,11 +28,24 @@
                 $(self).popover('destroy');
                 popover.removeClass('active');
             });
+
+            $("#content").click(function(e) {
+                e.stopPropagation();
+
+                if ($(e.target).parents().hasClass('popover')) {
+                    return;
+                }
+
+                popover.popover('destroy');
+                popover.removeClass('active');
+            });
         });
 
         popover.popover('show');
 
         var text = $.trim(popover.text().replace(/[.?,]/, ''));
+        $('.popover-title span').text(text);
+
         wordReference(text, popover);
     });
 
