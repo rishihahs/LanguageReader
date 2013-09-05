@@ -9,7 +9,7 @@
         template: '<div class="popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-canvas"><div class="popover-content"></div></div><button type="button" class="closepop closepop-popover">&times;</button></div>'
     };
 
-    $('.word').click(function(e) {
+    $('#content').on('click', '.word', function(e) {
         e.stopPropagation();
 
         if (popover) {
@@ -29,10 +29,11 @@
                 popover.removeClass('active');
             });
 
-            $("#content").click(function(e) {
+            $("body").click(function(e) {
                 e.stopPropagation();
 
-                if ($(e.target).parents().hasClass('popover')) {
+                var parents = $(e.target).parents();
+                if (parents.hasClass('popover') || parents.hasClass('top-bar')) {
                     return;
                 }
 
