@@ -1,6 +1,6 @@
-(function(window) {
+define([], function() {
   
-  window.Util = {
+  return {
     // iterate over every text node
     iterate: function(selector, tag, clazz, callback) {
       var contents = selector.contents();
@@ -34,6 +34,6 @@
       selector.remove();
       parent.append(text.join(' '));
     }
-  }
+  };
   
-})(this);
+});

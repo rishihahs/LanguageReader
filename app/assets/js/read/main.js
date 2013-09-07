@@ -1,8 +1,8 @@
-(function(window) {
+define(['jquery', 'read/util', 'foundation', 'read/popover'], function($, Util) {
 
     $(document).foundation();
 
-    window.Util.iterate($('#content'), 'i', 'word', window.Util.add);
+    Util.iterate($('#content'), 'i', 'word', Util.add);
 
     //     
     //     // Spanish API
@@ -14,4 +14,4 @@
     
 
 
-})(this);
+});

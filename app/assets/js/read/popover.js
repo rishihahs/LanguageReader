@@ -1,4 +1,4 @@
-(function(window) {
+define(['jquery', 'read/wordreference', 'hbs!templates/spanish', 'jquery.popover'], function($, WordReference, spanish) {
     var popover;
 
     var options = {
@@ -51,7 +51,7 @@
     });
 
     function wordReference(text, popover) {
-        window.WordReference.getJSON(text, function(content) {
+        WordReference.getJSON(text, function(content) {
             var response;
             if (content.hasOwnProperty('Error')) {
                 response = 'No translation found.';
@@ -63,8 +63,8 @@
                     return;
                 }
 
-                var context = window.WordReference.semantisizeJSON(content);
-                response = window.Handlebars.templates.spanish(context);
+                var context = WordReference.semantisizeJSON(content);
+                response = spanish(context);
             }
 
             $('.popover-content').html(response);
@@ -72,4 +72,4 @@
         });
     }
 
-})(this);
+});
