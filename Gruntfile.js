@@ -11,6 +11,20 @@ module.exports = function(grunt) {
             release: 'release'
         },
 
+        handlebars: {
+            compile: {
+                options: {
+                    amd: true,
+                    processName: function(filePath) {
+                        return filePath.split('/').pop();
+                    }
+                },
+                files: {
+                    "app/assets/js/templates/spanish.template.js": "app/assets/templates/spanish.hbs"
+                }
+            }
+        },
+
         requirejs: {
             compile: {
                 options: opt
@@ -28,10 +42,11 @@ module.exports = function(grunt) {
 
     // Load tasks from NPM
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-handlebars');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task.
-    grunt.registerTask('default', ['clean', 'requirejs', 'cssmin']);
+    grunt.registerTask('default', ['clean', 'handlebars', 'requirejs', 'cssmin']);
 
 };

@@ -22,7 +22,7 @@ module.exports = {
         // must appear before the excluder in this file. Otherwise it will
         // get confused.
         {
-            name: 'app/main-read',
+            name: 'read/main',
             exclude: ['common']
         }
     ]

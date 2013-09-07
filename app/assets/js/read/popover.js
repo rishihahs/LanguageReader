@@ -1,4 +1,4 @@
-define(['jquery', 'read/wordreference', 'hbs!templates/spanish', 'jquery.popover'], function($, WordReference, spanish) {
+define(['jquery', 'read/wordreference', 'templates/spanish.template', 'jquery.popover'], function($, WordReference, spanish) {
     var popover;
 
     var options = {
@@ -64,7 +64,7 @@ define(['jquery', 'read/wordreference', 'hbs!templates/spanish', 'jquery.popover
                 }
 
                 var context = WordReference.semantisizeJSON(content);
-                response = spanish(context);
+                response = spanish['spanish.hbs'](context);
             }
 
             $('.popover-content').html(response);
