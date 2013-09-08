@@ -34,7 +34,8 @@ module.exports = function(grunt) {
         cssmin: {
             compile: {
                 files: {
-                    'release/assets/css/main.css': 'release/assets/css/main.css'
+                    'release/assets/css/main.css': 'release/assets/css/main.css',
+                    'release/assets/css/aloha.css': 'release/assets/css/aloha.css'
                 }
             }
         }

@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/aloha.css">
 
         <script src="assets/js/vendor/modernizr-respond.js"></script>
     </head>
@@ -210,6 +211,27 @@
             </div>
           </div>
         <!-- End Footer -->
+
+        <script src="assets/js/vendor/jquery-1.7.2.js"></script>
+        <script>
+        if (window.Aloha === undefined || window.Aloha === null) {
+            var Aloha = window.Aloha = {};
+        }
+
+        Aloha.settings = {
+            locale: 'en',
+            jQuery: jQuery.noConflict(true),
+            plugins: {
+                load: 'common/ui, common/format, common/paste',
+                format: {
+                    config: ['b', 'i', 'p', 'h1', 'h2', 'h3', 'pre', 'removeFormat'],
+                }
+            },
+            sidebar: {
+                disabled: true
+            }
+        }
+        </script>
 
         <script src="assets/js/vendor/require.js"></script>
         <script type="text/javascript">

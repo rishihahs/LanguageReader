@@ -6,7 +6,8 @@ requirejs.config({
         'jquery': 'vendor/jquery-1.9.1.min',
         'foundation': 'vendor/foundation.min',
         'jquery.popover': 'vendor/jquery.popover',
-        'handlebars': 'vendor/handlebars'
+        'handlebars': 'vendor/handlebars',
+        'aloha': 'vendor/aloha'
     },
     shim: {
         'foundation': {
@@ -17,6 +18,9 @@ requirejs.config({
         },
         'handlebars': {
             exports: 'Handlebars'
+        },
+        'aloha': {
+            exports: 'Aloha'
         }
     }
 });
