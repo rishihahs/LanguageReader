@@ -44,7 +44,7 @@ define(['jquery', 'read/wordreference', 'templates/spanish.template', 'jquery.po
 
         popover.popover('show');
 
-        var text = $.trim(popover.text().replace(/[.?,]/, ''));
+        var text = $.trim(popover.text().toLowerCase().replace(/[.?,]/, ''));
         $('.popover-title span').text(text);
 
         wordReference(text, popover);
