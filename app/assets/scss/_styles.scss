@@ -1,3 +1,8 @@
+@import "foundation/variables";
+@import "foundation/components/global";
+@import "foundation/components/buttons";
+@import "compass/css3";
+
 $word_color: #fffec2;
 
 i {
@@ -18,8 +23,34 @@ i {
     background-color: $word_color;
 }
 
+.opaque {
+    @include opacity(0);
+}
+
 .popover-title {
     .foundicon-speaker {
         margin-left: 10px;
     }
+}
+
+/* This controls padding around the buttons. Use a variable or em value */
+$padding: $button-lrg;
+
+/* This controls button color. Set to one of our variables or a custom hex value */
+$bg: #ffb732;
+
+/* This controls button radius. Set to a variable, true/false, or custom px value */
+$radius: false;
+
+/* This whether button is full-width. Set to true or false */
+$full-width: true;
+
+/* This controls whether disabled styles are used. Set to true or false */
+$disabled: false;
+
+/* This controls padding for inputs, they are a little different */
+$is-input: false;
+
+.button-read {
+    @include button($padding, $bg, $radius, $full-width, $disabled, $is-input);
 }

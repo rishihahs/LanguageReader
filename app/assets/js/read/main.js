@@ -2,11 +2,23 @@ define(['jquery', 'read/util', 'aloha', 'foundation', 'read/popover'], function(
 
     $(document).foundation();
 
-    Util.iterate($('#content'), 'i', 'word', Util.add);
-
     Aloha.ready(function() {
         Aloha.jQuery('#content').aloha();
+        $('#content').focus();
+        $('#content').animate({ 'min-height': '600px' });
+
+        $('#content').click(function() {
+            $('.paste').addClass('opaque');
+        });
+
+        $('.done').click(function() {
+            Aloha.jQuery('#content').mahalo();
+            $(this).fadeOut();
+            Util.iterate($('#content'), 'i', 'word', Util.add);
+        });
     });
+
+    // 
 
     //     
     //     // Spanish API
