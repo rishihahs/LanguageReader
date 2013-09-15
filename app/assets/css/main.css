@@ -7791,13 +7791,36 @@ i {
   margin-left: 10px;
 }
 
+/* line 36, ../scss/_styles.scss */
+.languages-row {
+  line-height: 45px;
+}
+
+/* line 40, ../scss/_styles.scss */
+.languages-title {
+  color: white;
+  font-size: 0.8125em;
+  font-weight: bold;
+}
+
+/* line 46, ../scss/_styles.scss */
+form.languages {
+  margin-left: 16px;
+  font-size: 0.8em;
+}
+/* line 50, ../scss/_styles.scss */
+form.languages label {
+  color: white;
+  display: inline;
+}
+
 /* This controls padding around the buttons. Use a variable or em value */
 /* This controls button color. Set to one of our variables or a custom hex value */
 /* This controls button radius. Set to a variable, true/false, or custom px value */
 /* This whether button is full-width. Set to true or false */
 /* This controls whether disabled styles are used. Set to true or false */
 /* This controls padding for inputs, they are a little different */
-/* line 54, ../scss/_styles.scss */
+/* line 74, ../scss/_styles.scss */
 .button-read {
   border-style: solid;
   border-width: 1px;

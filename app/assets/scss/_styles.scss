@@ -33,6 +33,26 @@ i {
     }
 }
 
+.languages-row {
+  line-height: 45px;
+}
+
+.languages-title {
+  color: white;
+  font-size: 0.8125em;
+  font-weight: bold;
+}
+
+form.languages {
+  margin-left: 16px;
+  font-size: 0.8em;
+
+  label {
+    color: white;
+    display: inline;
+  }
+}
+
 /* This controls padding around the buttons. Use a variable or em value */
 $padding: $button-lrg;
 
