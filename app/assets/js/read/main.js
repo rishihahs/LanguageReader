@@ -9,6 +9,11 @@ define(['jquery', 'read/util', 'aloha', 'foundation', 'read/popover', 'jstorage'
         $('.done').addClass('opaque');
     }
 
+    $('.new').click(function() {
+        $.jStorage.deleteKey('story');
+        window.location.reload();
+    });
+
     Aloha.ready(function() {
         if (story) {
             return;
