@@ -6,6 +6,7 @@ requirejs.config({
         'jquery': 'vendor/jquery-1.9.1.min',
         'foundation': 'vendor/foundation.min',
         'jquery.popover': 'vendor/jquery.popover',
+        'jstorage': 'vendor/jstorage',
         'handlebars': 'vendor/handlebars',
         'aloha': 'vendor/aloha'
     },
@@ -14,6 +15,9 @@ requirejs.config({
             deps: ['jquery']
         },
         'jquery.popover': {
+            deps: ['jquery']
+        },
+        'jstorage': {
             deps: ['jquery']
         },
         'handlebars': {
