@@ -11,6 +11,7 @@ define(['jquery', 'read/util', 'aloha', 'foundation', 'read/popover', 'jstorage'
 
     $('.new').click(function() {
         $.jStorage.deleteKey('story');
+        $.jStorage.deleteKey('words');
         window.location.reload();
     });
 

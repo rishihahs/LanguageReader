@@ -1,5 +1,6 @@
-define(['jquery', 'read/wordreference', 'templates/spanish.template', 'jquery.popover'], function($, WordReference, spanish) {
+define(['jquery', 'read/wordreference', 'templates/spanish.template', 'jquery.popover', 'jstorage'], function($, WordReference, spanish) {
     var popover;
+    var missed = $.jStorage.get('words', []);
 
     var options = {
         placement: 'auto',
@@ -48,6 +49,9 @@ define(['jquery', 'read/wordreference', 'templates/spanish.template', 'jquery.po
         $('.popover-title span').text(text);
 
         wordReference(text, popover);
+
+        missed.push(text);
+        $.jStorage.set('words', missed);
     });
 
     function wordReference(text, popover) {
