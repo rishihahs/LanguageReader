@@ -7812,6 +7812,7 @@ form.languages {
 form.languages label {
   color: white;
   display: inline;
+  padding-right: 3px;
 }
 
 /* This controls padding around the buttons. Use a variable or em value */
@@ -7820,7 +7821,7 @@ form.languages label {
 /* This whether button is full-width. Set to true or false */
 /* This controls whether disabled styles are used. Set to true or false */
 /* This controls padding for inputs, they are a little different */
-/* line 74, ../scss/_styles.scss */
+/* line 75, ../scss/_styles.scss */
 .button-read {
   border-style: solid;
   border-width: 1px;

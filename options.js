@@ -23,7 +23,7 @@ module.exports = {
         // get confused.
         {
             name: 'read/main',
-            exclude: ['common']
+            exclude: ['common', 'aloha']
         }
     ]
 };

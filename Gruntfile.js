@@ -7,10 +7,6 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
 
-        clean: {
-            release: 'release'
-        },
-
         handlebars: {
             compile: {
                 options: {
@@ -31,6 +27,18 @@ module.exports = function(grunt) {
             }
         },
 
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: {
+                    'release/index.html': 'release/index.html'
+                }
+            }
+        },
+
         cssmin: {
             compile: {
                 files: {
@@ -38,16 +46,22 @@ module.exports = function(grunt) {
                     'release/assets/css/aloha.css': 'release/assets/css/aloha.css'
                 }
             }
-        }
+        },
+
+        clean: [
+            'release/assets/templates/**',
+            'release/assets/scss/**'
+        ]
     });
 
     // Load tasks from NPM
-    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-handlebars');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
     // Default task.
-    grunt.registerTask('default', ['clean', 'handlebars', 'requirejs', 'cssmin']);
+    grunt.registerTask('default', ['handlebars', 'requirejs', 'htmlmin', 'cssmin', 'clean']);
 
 };
