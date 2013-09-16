@@ -1,0 +1,8 @@
+<form class="wordsmissed custom">
+    {{#each this}}
+    <label for="checkbox{{@index}}">
+      <input type="checkbox" checked="checked" id="checkbox{{@index}}" style="display: none;">
+      <span class="custom checkbox checked"></span> {{this}}
+    </label>
+    {{/each}}
+</form>

@@ -49,9 +49,6 @@ define(['jquery', 'read/wordreference', 'templates/spanish.template', 'jquery.po
         $('.popover-title span').text(text);
 
         wordReference(text, popover);
-
-        missed.push(text);
-        $.jStorage.set('words', missed);
     });
 
     function wordReference(text, popover) {
@@ -73,6 +70,8 @@ define(['jquery', 'read/wordreference', 'templates/spanish.template', 'jquery.po
 
             $('.popover-content').html(response);
             popover.popover('rearrange');
+            missed.push(text);
+            $.jStorage.set('words', missed);
         });
     }
 

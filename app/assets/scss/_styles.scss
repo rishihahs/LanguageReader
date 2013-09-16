@@ -54,6 +54,14 @@ form.languages {
   }
 }
 
+.wordsmissed {
+  font-size: 1.6em;
+}
+
+.new {
+  background: $primary-color !important;
+}
+
 /* This controls padding around the buttons. Use a variable or em value */
 $padding: $button-lrg;
 

@@ -1,9 +1,3 @@
-define(['jquery', 'foundation', 'jstorage'], function($) {
+define(['jquery', 'foundation'], function($) {
     $(document).foundation();
-
-    $('.new').click(function() {
-        $.jStorage.deleteKey('story');
-        $.jStorage.deleteKey('words');
-        window.location.reload();
-    });
 });

@@ -6,6 +6,11 @@ define(['jquery', 'read/util', 'aloha', 'shared', 'read/popover', 'jstorage'], f
         $('.paste').addClass('opaque');
         $('.done').addClass('opaque');
     }
+    $('.new').click(function() {
+        $.jStorage.deleteKey('story');
+        $.jStorage.deleteKey('words');
+        window.location.reload();
+    });
 
     Aloha.ready(function() {
         if (story) {
