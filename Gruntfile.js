@@ -34,7 +34,8 @@ module.exports = function(grunt) {
                     collapseWhitespace: true
                 },
                 files: {
-                    'release/index.html': 'release/index.html'
+                    'release/index.html': 'release/index.html',
+                    'release/review.html': 'release/review.html'
                 }
             }
         },

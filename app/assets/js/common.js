@@ -8,7 +8,8 @@ requirejs.config({
         'jquery.popover': 'vendor/jquery.popover',
         'jstorage': 'vendor/jstorage',
         'handlebars': 'vendor/handlebars',
-        'aloha': 'vendor/aloha'
+        'aloha': 'vendor/aloha',
+        'shared': 'shared'
     },
     shim: {
         'foundation': {

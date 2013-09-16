@@ -13,7 +13,9 @@ module.exports = {
             // nested dependencies.
             include: [
                 'jquery',
-                'foundation'
+                'foundation',
+                'jstorage',
+                'shared'
             ]
         },
 
@@ -24,6 +26,11 @@ module.exports = {
         {
             name: 'read/main',
             exclude: ['common', 'aloha']
+        },
+
+        {
+            name: 'review/main',
+            exclude: ['common']
         }
     ]
 };

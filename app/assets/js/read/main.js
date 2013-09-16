@@ -1,6 +1,4 @@
-define(['jquery', 'read/util', 'aloha', 'foundation', 'read/popover', 'jstorage'], function($, Util, Aloha) {
-
-    $(document).foundation();
+define(['jquery', 'read/util', 'aloha', 'shared', 'read/popover', 'jstorage'], function($, Util, Aloha) {
 
     var story = $.jStorage.get('story');
     if (story) {
@@ -8,12 +6,6 @@ define(['jquery', 'read/util', 'aloha', 'foundation', 'read/popover', 'jstorage'
         $('.paste').addClass('opaque');
         $('.done').addClass('opaque');
     }
-
-    $('.new').click(function() {
-        $.jStorage.deleteKey('story');
-        $.jStorage.deleteKey('words');
-        window.location.reload();
-    });
 
     Aloha.ready(function() {
         if (story) {
