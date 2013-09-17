@@ -22,6 +22,14 @@ module.exports = function(grunt) {
             }
         },
 
+        compass: {
+            dist: {
+                options: {
+                    config: 'compass.rb'
+                }
+            }
+        },
+
         requirejs: {
             compile: {
                 options: opt
@@ -58,12 +66,13 @@ module.exports = function(grunt) {
 
     // Load tasks from NPM
     grunt.loadNpmTasks('grunt-contrib-handlebars');
+    grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     // Default task.
-    grunt.registerTask('default', ['handlebars', 'requirejs', 'htmlmin', 'cssmin', 'clean']);
+    grunt.registerTask('default', ['handlebars', 'compass', 'requirejs', 'htmlmin', 'cssmin', 'clean']);
 
 };
