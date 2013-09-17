@@ -1,0 +1,1 @@
+define(["jquery","foundation"],function(e){e(document).foundation()});
