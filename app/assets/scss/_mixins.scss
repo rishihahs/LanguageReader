@@ -1,4 +1,0 @@
-@mixin color-opacity($key, $color, $opacity: 1) {
-    $key: $color; /* The Fallback */
-    $key: rgba($color, $opacity);
-}
