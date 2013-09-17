@@ -18,3 +18,5 @@ build
 publish
 intermediate
 release
+
+app/assets/css/*.css
