@@ -61,7 +61,15 @@ module.exports = function(grunt) {
         clean: [
             'release/assets/templates/**',
             'release/assets/scss/**'
-        ]
+        ],
+
+        jshint: {
+            options: {
+                jshintrc: '.jshintrc',
+                ignores: ['app/assets/js/vendor/*.js', 'app/assets/js/templates/*.js']
+            },
+            all: ['app/assets/js/**/*.js']
+        }
     });
 
     // Load tasks from NPM
@@ -71,6 +79,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
     // Default task.
     grunt.registerTask('default', ['handlebars', 'compass', 'requirejs', 'htmlmin', 'cssmin', 'clean']);

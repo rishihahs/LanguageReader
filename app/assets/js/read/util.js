@@ -34,7 +34,7 @@ define([], function() {
           }
 
           textList[o].selector.remove();
-          added = parent.contents().length - contents.length
+          added = parent.contents().length - contents.length;
         }
       }
     },
@@ -53,8 +53,6 @@ define([], function() {
 
         text[i] = '<' + tag + ' class="' + clazz + '">' + text[i].substring(0, len) + '</' + tag + '>' + text[i].substring(len, text[i].length);
       }
-
-      var parent = selector.parent();
 
       if (position === 0) {
         textList[0] = {text: text.join(' '), selector: selector};
