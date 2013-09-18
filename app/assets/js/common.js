@@ -8,7 +8,6 @@ requirejs.config({
         'jquery.popover': 'vendor/jquery.popover',
         'jstorage': 'vendor/jstorage',
         'handlebars': 'vendor/handlebars',
-        'aloha': 'vendor/aloha',
         'shared': 'shared'
     },
     shim: {
@@ -23,9 +22,6 @@ requirejs.config({
         },
         'handlebars': {
             exports: 'Handlebars'
-        },
-        'aloha': {
-            exports: 'Aloha'
         }
     }
 });

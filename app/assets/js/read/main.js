@@ -1,4 +1,4 @@
-define(['jquery', 'read/util', 'aloha', 'shared', 'read/popover', 'jstorage'], function($, Util, Aloha) {
+define(['jquery', 'read/util', 'shared', 'read/popover', 'jstorage'], function($, Util) {
 
     var story = $.jStorage.get('story');
     if (story) {
