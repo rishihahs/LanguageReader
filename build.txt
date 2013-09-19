@@ -37,4 +37,7 @@ assets/js/review/main.js
 ----------------
 assets/js/vendor/handlebars.js
 assets/js/templates/wordsmissed.template.js
+assets/js/read/WordReference.js
+assets/js/templates/spanish.template.js
+assets/js/review/flashcards.js
 assets/js/review/main.js
