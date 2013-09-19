@@ -1,4 +1,4 @@
-define(['jquery', 'templates/wordsmissed.template', 'shared', 'jstorage'], function($, wordsmissed) {
+define(['jquery', 'templates/wordsmissed.template', 'shared', 'jstorage', 'review/flashcards'], function($, wordsmissed) {
     $('.new').click(function() {
         $.jStorage.deleteKey('story');
         $.jStorage.deleteKey('words');
