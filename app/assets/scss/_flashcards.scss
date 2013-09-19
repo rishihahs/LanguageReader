@@ -5,6 +5,7 @@
 
 .flashcards {
     height: 380px;
+    margin-bottom: 380px;
     display: none;
 
     .arrow {
@@ -23,7 +24,7 @@
     }
 
     .flashcard-definition {
-        //display: none;
+        display: none;
     }
 
     .definitions {

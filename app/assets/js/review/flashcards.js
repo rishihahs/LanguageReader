@@ -29,6 +29,7 @@ define(['jquery', 'read/WordReference', 'templates/spanish.template', 'jstorage'
 
             template.empty();
             template.append('<h1>' + text + '</h1>');
+            template.append('<p class="clicktoshow">Click to show definition</p>');
             template.append('<div class="flashcard-definition">' + response + '</div>');
             var clone = template.clone();
 
@@ -40,14 +41,25 @@ define(['jquery', 'read/WordReference', 'templates/spanish.template', 'jstorage'
         });
     }
 
+    $('.flashcards').on('click', '.flashcard-content', function() {
+        $(this).find('.clicktoshow').hide();
+        $(this).find('.flashcard-definition').fadeIn('fast');
+    });
+
     var index = 0;
 
     $('.flashcards .flow:first').click(function() {
-        prev();
+        prev(function() {
+            $('.clicktoshow').show();
+            $('.flashcard-definition').hide();
+        });
     });
 
     $('.flashcards .flow:last').click(function() {
-        next();
+        next(function() {
+            $('.clicktoshow').show();
+            $('.flashcard-definition').hide();
+        });
     });
 
     function prev() {
@@ -60,10 +72,13 @@ define(['jquery', 'read/WordReference', 'templates/spanish.template', 'jstorage'
         if (index === 0) {
             $('.flow:first .arrow').addClass('opaque');
         }
-
+        var args = arguments;
         $('.flow:last .arrow').removeClass('opaque');
         $('.flashcard-content').eq(index + 1).fadeOut('fast', function() {
             $('.flashcard-content').eq(index).show();
+            if (typeof args[0] === 'function') {
+                args[0]();
+            }
         });
     }
 
@@ -78,10 +93,13 @@ define(['jquery', 'read/WordReference', 'templates/spanish.template', 'jstorage'
         if (index === len) {
             $('.flow:last .arrow').addClass('opaque');
         }
-
+        var args = arguments;
         $('.flow:first .arrow').removeClass('opaque');
         $('.flashcard-content').eq(index - 1).fadeOut('fast', function() {
             $('.flashcard-content').eq(index).show();
+            if (typeof args[0] === 'function') {
+                args[0]();
+            }
         });
     }
 
