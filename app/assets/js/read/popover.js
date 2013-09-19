@@ -66,12 +66,12 @@ define(['jquery', 'read/wordreference', 'templates/spanish.template', 'jquery.po
 
                 var context = WordReference.semantisizeJSON(content);
                 response = spanish['spanish.hbs'](context);
+                missed.push(text);
+                $.jStorage.set('words', missed);
             }
 
             $('.popover-content').html(response);
             popover.popover('rearrange');
-            missed.push(text);
-            $.jStorage.set('words', missed);
         });
     }
 
