@@ -1,11 +1,11 @@
-define(['jquery', 'read/WordReference', 'templates/spanish.template', 'jstorage'], function($, WordReference, spanish) {
+define(['jquery', 'read/WordReference', 'templates/spanish.template'], function($, WordReference, spanish) {
 
     var template = $('.flashcard-content').remove().clone().css('display', 'none');
 
     $('.create').click(function() {
-        var words = $.jStorage.get('words', []);
+        var words = $('.wordsmissed input[type="checkbox"]:checked').parent();
         for (var i = 0, l = words.length; i < l; i++) {
-            wordReference(words[i]);
+            wordReference($.trim(words.eq(i).text()));
         }
         $('.flashcards').show();
     });
