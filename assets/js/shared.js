@@ -1,1 +1,1 @@
-define(["jquery","foundation"],function(e){e(document).foundation()});
+define(["jquery","foundation","jstorage"],function(e){e(document).foundation(),e('.languages input[type="radio"]').change(function(){e.jStorage.set("language",e.trim(e(this).parent().text()))});var t=["es","fr"],n=e.jStorage.get("language"),r=t.indexOf(n);n&&r&&(e('.languages input[type="radio"]').prop("checked",!1).next().removeClass("checked"),e('.languages input[type="radio"]').eq(r).prop("checked",!0).next().addClass("checked"))});

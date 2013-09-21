@@ -28,7 +28,7 @@ assets/js/read/main.js
 assets/js/read/util.js
 assets/js/read/wordreference.js
 assets/js/vendor/handlebars.js
-assets/js/templates/spanish.template.js
+assets/js/templates/foreignlanguage.template.js
 assets/js/vendor/jquery.popover.js
 assets/js/read/popover.js
 assets/js/read/main.js
@@ -38,6 +38,6 @@ assets/js/review/main.js
 assets/js/vendor/handlebars.js
 assets/js/templates/wordsmissed.template.js
 assets/js/read/WordReference.js
-assets/js/templates/spanish.template.js
+assets/js/templates/foreignlanguage.template.js
 assets/js/review/flashcards.js
 assets/js/review/main.js
