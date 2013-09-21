@@ -1,4 +1,4 @@
-define(['jquery', 'read/wordreference', 'templates/spanish.template', 'jquery.popover', 'jstorage'], function($, WordReference, spanish) {
+define(['jquery', 'read/wordreference', 'templates/foreignlanguage.template', 'jquery.popover', 'jstorage'], function($, WordReference, foreignlanguage) {
     var popover;
     var missed = $.jStorage.get('words', []);
 
@@ -65,7 +65,7 @@ define(['jquery', 'read/wordreference', 'templates/spanish.template', 'jquery.po
                 }
 
                 var context = WordReference.semantisizeJSON(content);
-                response = spanish['spanish.hbs'](context);
+                response = foreignlanguage['foreignlanguage.hbs'](context);
                 missed.push(text);
                 $.jStorage.set('words', missed);
             }

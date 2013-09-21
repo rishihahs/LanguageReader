@@ -1,4 +1,4 @@
-define(['jquery', 'read/WordReference', 'templates/spanish.template'], function($, WordReference, spanish) {
+define(['jquery', 'read/WordReference', 'templates/foreignlanguage.template'], function($, WordReference, foreignlanguage) {
 
     var template = $('.flashcard-content').remove().clone().css('display', 'none');
 
@@ -24,7 +24,7 @@ define(['jquery', 'read/WordReference', 'templates/spanish.template'], function(
                 }
 
                 var context = WordReference.semantisizeJSON(content);
-                response = spanish['spanish.hbs'](context);
+                response = foreignlanguage['foreignlanguage.hbs'](context);
             }
 
             template.empty();

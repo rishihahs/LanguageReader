@@ -16,7 +16,7 @@ module.exports = function(grunt) {
                     }
                 },
                 files: {
-                    "app/assets/js/templates/spanish.template.js": "app/assets/templates/spanish.hbs",
+                    "app/assets/js/templates/foreignlanguage.template.js": "app/assets/templates/foreignlanguage.hbs",
                     "app/assets/js/templates/wordsmissed.template.js": "app/assets/templates/wordsmissed.hbs"
                 }
             }
