@@ -52,7 +52,7 @@ define(['jquery', 'read/wordreference', 'templates/foreignlanguage.template', 'j
     });
 
     function wordReference(text, popover) {
-        WordReference.getJSON(text, function(content) {
+        WordReference.getJSON(text, $.jStorage.get('language'), function(content) {
             var response;
             if (content.hasOwnProperty('Error')) {
                 response = 'No translation found.';

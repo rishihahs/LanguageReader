@@ -1,8 +1,8 @@
 define(['jquery'], function($) {
 	var WordReference = {};
 	
-	WordReference.createURL = function(word) {
-		return 'http://api.wordreference.com/69660/json/esen/' + word + '?callback=?';
+	WordReference.createURL = function(word, lang) {
+		return 'http://api.wordreference.com/69660/json/' + lang + 'en/' + word + '?callback=?';
 	};
 
 	WordReference.semantisizeJSON = function(json) {
@@ -32,8 +32,8 @@ define(['jquery'], function($) {
 		return obj;
 	};
 
-	WordReference.getJSON = function(word, callback) {
-		$.getJSON(WordReference.createURL(word), function(data) {
+	WordReference.getJSON = function(word, lang, callback) {
+		$.getJSON(WordReference.createURL(word, (lang || 'es')), function(data) {
 			callback(data);
 		});
 	};

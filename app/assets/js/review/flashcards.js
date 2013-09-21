@@ -11,7 +11,7 @@ define(['jquery', 'read/WordReference', 'templates/foreignlanguage.template'], f
     });
 
     function wordReference(text) {
-        WordReference.getJSON(text, function(content) {
+        WordReference.getJSON(text, $.jStorage.get('language'), function(content) {
             var response;
             if (content.hasOwnProperty('Error')) {
                 response = 'No translation found.';
