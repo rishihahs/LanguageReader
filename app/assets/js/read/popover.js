@@ -66,8 +66,11 @@ define(['jquery', 'read/wordreference', 'templates/foreignlanguage.template', 'j
 
                 var context = WordReference.semantisizeJSON(content);
                 response = foreignlanguage['foreignlanguage.hbs'](context);
-                missed.push(text);
-                $.jStorage.set('words', missed);
+
+                if (missed.indexOf(text) < 0) {
+                    missed.push(text);
+                    $.jStorage.set('words', missed);
+                }
             }
 
             $('.popover-content').html(response);
