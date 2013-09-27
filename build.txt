@@ -41,3 +41,4 @@ assets/js/read/WordReference.js
 assets/js/templates/foreignlanguage.template.js
 assets/js/review/flashcards.js
 assets/js/review/main.js
+ 
