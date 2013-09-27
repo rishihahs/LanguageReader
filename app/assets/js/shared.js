@@ -1,6 +1,11 @@
 define(['jquery', 'foundation', 'jstorage'], function($) {
     $(document).foundation();
 
+    if (!($.jStorage.get('joyride') || $.jStorage.get('language') || $.jStorage.get('words') || $.jStorage.get('story'))) {
+        $(document).foundation('joyride', 'start');
+        $.jStorage.set('joyride', true);
+    }
+
     $('.languages input[type="radio"]').change(function() {
         $.jStorage.set('language', $.trim($(this).parent().text()));
     });
